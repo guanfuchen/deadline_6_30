@@ -41,6 +41,9 @@ sudo restart systemd-logind
 rosrun image_view image_view image:=/camera/right/image_raw
 ```
 
+由于在笔记本上接上ZED双目相机，而zed_cpu_ros是用opencv的VideoCapture接口指定相机设备0或者1，所以
+这里指定1为ZED双目相机，0为笔记本自带相机，更改代码后catkin_make即可。
+
 ## 安装rosaria
 
 首先安装Aria库，该库通过串口可以获取P3AT机器人的底层数据，包括控制底层运动平台。
