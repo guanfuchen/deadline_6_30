@@ -1,1 +1,3 @@
 keras_conv_lstm_weights_best.hdf5
+trainannot_moving_48x36.npy
+train_48x36.npy
