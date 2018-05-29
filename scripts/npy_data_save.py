@@ -18,6 +18,7 @@ if __name__ == '__main__':
     moving_obj_data = []
     CamVidRootTrainAnnotList = os.listdir(MovingObjSavePath)
     CamVidRootTrainAnnotListLen = len(CamVidRootTrainAnnotList)
+    CamVidRootTrainAnnotListLen = min(CamVidRootTrainAnnotListLen, 50)
     timestamps = 20
     for CamVidRootTrainAnnotListIndex in range(CamVidRootTrainAnnotListLen-timestamps):
         # print(CamVidRootTrainAnnotListIndex)
